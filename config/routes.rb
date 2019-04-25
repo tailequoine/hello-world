@@ -1,4 +1,12 @@
 HelloWorld::Application.routes.draw do
+  get "home/index"
+
+  resources :expenses
+
+
+  resources :categories
+
+
   devise_for :users
 
   # The priority is based upon order of creation:
