@@ -46,3 +46,5 @@ gem 'devise'
 gem 'cancancan'
 gem 'draper'
 gem 'pundit'
+
+gem 'test-unit', '~> 3.0'
