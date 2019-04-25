@@ -38,3 +38,11 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'activeadmin', '~> 1.0.0.pre5'
+
+# Plus integrations with:
+gem 'devise'
+gem 'cancancan'
+gem 'draper'
+gem 'pundit'

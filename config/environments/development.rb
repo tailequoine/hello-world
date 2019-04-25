@@ -34,4 +34,8 @@ HelloWorld::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+
+  # tai.le
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3001 }
 end
