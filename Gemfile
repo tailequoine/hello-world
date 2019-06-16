@@ -22,7 +22,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails', '3.0.2'
+gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -39,11 +39,11 @@ gem 'jquery-rails', '3.0.2'
 # To use debugger
 # gem 'debugger'
 
-gem 'activeadmin', '~> 1.0.0.pre5'
+gem 'activeadmin'
 
 # Plus integrations with:
-gem 'devise'
-gem 'cancancan'
+gem 'devise', '>= 2.2.3'
+gem 'cancancan', '~> 1.17'
 gem 'draper'
 gem 'pundit'
 

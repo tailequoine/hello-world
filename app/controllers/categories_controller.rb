@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
   before_filter :set_category, only: [:show, :edit, :update, :destroy]
 
-  before_filter :authenticate_user!
+  # before_filter :authenticate_user!
 
   respond_to :html
 
