@@ -48,3 +48,5 @@ gem 'draper'
 gem 'pundit'
 
 gem 'test-unit', '~> 3.0'
+
+gem 'sidekiq', '~> 4.2.10'

@@ -1,7 +1,18 @@
+require 'sidekiq/web'
+
+
+
 HelloWorld::Application.routes.draw do
   # TODO comment out due to error
   # devise_for :admin_users, ActiveAdmin::Devise.config
   # ActiveAdmin.routes(self)
+
+  if Rails.env.development?
+    Sidekiq::Web.use(Rack::Auth::Basic) do |user, password|
+      [user, password] == ["admin", "secret"]
+    end
+    mount Sidekiq::Web => '/sidekiq'
+  end
 
   get "home/index"
 
